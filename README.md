@@ -313,11 +313,35 @@ HTTP/1.1 200 OK
 
 **request:**
 
+POST http://api.movieapp.com/movies HTTP/1.1
+{
+actors:[{<br>
+  "name": "Brad Pitt", <br>
+  "bio": "William Bradley Pitt (born December 18, 1963) is…", <br>
+  "birthday": "1963-12-18", <br>
+  "deathday": null, <br>
+  "gender": 5, <br>
+  "popularity": 9.93<br>
+},
+{<br>
+  "name": "Brad Pitt", <br>
+  "bio": "William Bradley Pitt (born December 18, 1963) is…", <br>
+  "birthday": "1963-12-18", <br>
+  "deathday": null, <br>
+  "gender": 5, <br>
+  "popularity": 9.93<br>
+},
+{<br>
+  "name": "Brad Pitt", <br>
+  "bio": "William Bradley Pitt (born December 18, 1963) is…", <br>
+  "birthday": "1963-12-18", <br>
+  "deathday": null, <br>
+  "gender": 5, <br>
+  "popularity": 9.93<br>
+}]
+}
 **response:**
 
-HTTP/1.1 200 OK
-Location: /actors/123
-
-
+HTTP/1.1 201 OK
 
 
