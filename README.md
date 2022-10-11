@@ -8,13 +8,31 @@
 
 POST http://api.movieapp.com/movies HTTP/1.1
 
-{<br>
+{"movies":[{<br>
   "title": "movie name", <br>
   "plot": "William Bradley Pitt (born December 18, 1963) is…", <br>
   "poster": "1963-12-18", <br>
   "budget": 1000000, <br>
   "revenue": 150000, <br>
   "genres": ["Comedy","Drama"]<br>
+  },
+  {<br>
+  "title": "movie name", <br>
+  "plot": "William Bradley Pitt (born December 18, 1963) is…", <br>
+  "poster": "1963-12-18", <br>
+  "budget": 1000000, <br>
+  "revenue": 150000, <br>
+  "genres": ["Comedy","Drama"]<br>
+  },
+  {<br>
+  "title": "movie name", <br>
+  "plot": "William Bradley Pitt (born December 18, 1963) is…", <br>
+  "poster": "1963-12-18", <br>
+  "budget": 1000000, <br>
+  "revenue": 150000, <br>
+  "genres": ["Comedy","Drama"]<br>
+  }
+  ]
 }
 
 **response:**
@@ -114,8 +132,9 @@ POST http://api.movieapp.com/actors HTTP/1.1
 
 HTTP/1.1 201 Created
 Location: /actors/123
-
-{<br>
+{
+"actors":
+[{<br>
   "id": 123
   "name": "Brad Pitt", <br>
   "bio": "William Bradley Pitt (born December 18, 1963) is…", <br>
@@ -123,6 +142,23 @@ Location: /actors/123
   "deathday": null, <br>
   "gender": 2, <br>
   "popularity": 9.93<br>
+},{<br>
+  "id": 123
+  "name": "Brad Pitt", <br>
+  "bio": "William Bradley Pitt (born December 18, 1963) is…", <br>
+  "birthday": "1963-12-18", <br>
+  "deathday": null, <br>
+  "gender": 2, <br>
+  "popularity": 9.93<br>
+},{<br>
+  "id": 123
+  "name": "Brad Pitt", <br>
+  "bio": "William Bradley Pitt (born December 18, 1963) is…", <br>
+  "birthday": "1963-12-18", <br>
+  "deathday": null, <br>
+  "gender": 2, <br>
+  "popularity": 9.93<br>
+}]
 }
 
 **b. reading movie**
