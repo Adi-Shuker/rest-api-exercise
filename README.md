@@ -8,17 +8,17 @@
 
 POST http://api.movieapp.com/movies HTTP/1.1
 
-{"movies":
-[
-{<br>
-  "title": "movie name", <br>
-  "plot": "William Bradley Pitt (born December 18, 1963) is…", <br>
-  "poster": "1963-12-18", <br>
-  "budget": 1000000, <br>
-  "revenue": 150000, <br>
-  "genres": ["Comedy","Drama"]<br>
-  }
-  ]
+{
+"movies":[<br>
+        {<br>
+          "title": "movie name", <br>
+          "plot": "William Bradley Pitt (born December 18, 1963) is…", <br>
+          "poster": "1963-12-18", <br>
+          "budget": 1000000, <br>
+          "revenue": 150000, <br>
+          "genres": ["Comedy","Drama"]<br>
+          }
+        ]<br>
 }
 
 **response:**
@@ -104,14 +104,18 @@ HTTP/1.1 204 No Content
 **request:**
 
 POST http://api.movieapp.com/actors HTTP/1.1
-
+{
+"actors":[<br>
 {<br>
+  "id": 123
   "name": "Brad Pitt", <br>
   "bio": "William Bradley Pitt (born December 18, 1963) is…", <br>
   "birthday": "1963-12-18", <br>
   "deathday": null, <br>
   "gender": 2, <br>
   "popularity": 9.93<br>
+}
+]
 }
 
 **response:**
@@ -144,6 +148,9 @@ get http://api.movieapp.com/actors/123 HTTP/1.1
 
 HTTP/1.1 200 OK
 
+{
+"actors":
+[
 {<br>
   "id": 123
   "name": "Brad Pitt", <br>
@@ -152,6 +159,8 @@ HTTP/1.1 200 OK
   "deathday": null, <br>
   "gender": 2, <br>
   "popularity": 9.93<br>
+}
+]
 }
 
 **c. update movie**
